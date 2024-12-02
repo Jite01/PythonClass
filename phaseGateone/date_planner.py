@@ -16,6 +16,9 @@ today_date = int(input())
 print('Enter The Number Of Days Elapsed Since Today:-->')
 time_passed = int(input())
 
+if time_passed > 4:
+	index = (time_passed + today_date) % 6
+
 index = time_passed + today_date
 
 match today_date:
